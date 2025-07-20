@@ -7,8 +7,19 @@ import { Button } from "@/components/ui/button"
 import { Star, ShoppingCart } from "lucide-react"
 import Image from "next/image"
 
+// Add Product type
+interface Product {
+  name: string;
+  description: string;
+  price: string;
+  rating: number;
+  reviews: number;
+  image: string;
+  category: string;
+}
+
 export function CarProductsSection() {
-  const products = [
+  const products: Product[] = [
     {
       name: "Premium Car Shampoo",
       description: "Professional-grade car wash solution",
@@ -16,6 +27,7 @@ export function CarProductsSection() {
       rating: 4.8,
       reviews: 1247,
       image: "/images/car shampoo.png",
+      category: "Car Care",
     },
     {
       name: "Glass Cleaner",
@@ -24,6 +36,7 @@ export function CarProductsSection() {
       rating: 4.6,
       reviews: 892,
       image: "/images/glass cleaner.png",
+      category: "Car Care",
     },
     {
       name: "Dashboard Polish",
@@ -32,6 +45,7 @@ export function CarProductsSection() {
       rating: 4.7,
       reviews: 567,
       image: "/images/dashboard-polish.png",
+      category: "Interior Care",
     },
     {
       name: "Quick Detailer",
@@ -40,6 +54,7 @@ export function CarProductsSection() {
       rating: 4.5,
       reviews: 743,
       image: "/images/quick detailer.png",
+      category: "Exterior Care",
     },
     {
       name: "Tire Shiner",
@@ -48,6 +63,7 @@ export function CarProductsSection() {
       rating: 4.4,
       reviews: 456,
       image: "/images/tyre shinner.png",
+      category: "Wheels & Tires",
     },
     {
       name: "Car Care Kit",
@@ -56,6 +72,7 @@ export function CarProductsSection() {
       rating: 4.9,
       reviews: 1892,
       image: "/images/car care kit.png",
+      category: "Car Care",
     },
   ]
 
