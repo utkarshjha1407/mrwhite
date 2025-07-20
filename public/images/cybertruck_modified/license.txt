@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cybertruck Modified
+* source:	https://sketchfab.com/3d-models/cybertruck-modified-410d6701da4f44ffaf77242fe6867270
+* author:	carmodifier (https://sketchfab.com/carmodifier)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cybertruck Modified" (https://sketchfab.com/3d-models/cybertruck-modified-410d6701da4f44ffaf77242fe6867270) by carmodifier (https://sketchfab.com/carmodifier) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
