@@ -150,7 +150,7 @@ export default function HomePage() {
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               C
             </div>
-            <span>Carrify</span>
+            <span>Caarify - GaadiGuru</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link

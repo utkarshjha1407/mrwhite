@@ -185,7 +185,7 @@ export default function ProductsPage() {
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               C
             </div>
-            <span>Carrify</span>
+            <span>Caarify - GaadiGuru</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -240,9 +240,12 @@ export default function ProductsPage() {
           <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
             Products & Services
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Everything Your Car Needs</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover premium car products and professional services from trusted providers. Quality guaranteed.
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 
+  text-black dark:text-white">
+            Your Complete Car Super App
+          </h1>
+          <p className="text-white">
+            Find answers to common questions about our platform.
           </p>
         </motion.div>
 

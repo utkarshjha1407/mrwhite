@@ -101,16 +101,33 @@ export default function LandingPage() {
   ]
 
   return (
-    <div className="flex min-h-[100dvh] flex-col">
-      <header
-        className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
+    <div className="flex min-h-[100dvh] flex-col relative overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="fixed top-0 left-0 w-full h-full object-cover z-0"
       >
+        <source src="/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay for better text readability */}
+      <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-10 pointer-events-none" />
+
+      {/* Main Content */}
+      <div className="relative z-20">
+        <header
+          className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
+        >
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               S
             </div>
-            <span>Carrify</span>
+            <span>Caarify - GaadiGuru</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -203,11 +220,11 @@ export default function LandingPage() {
                 <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                   Your Car Companion
                 </Badge>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-black dark:text-white">
                   Your Complete Car Super App
                 </h1>
-                <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  From maintenance and health monitoring to buying, selling, and everything in between. Carrify is your
+                <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-black dark:text-white">
+                  From maintenance and health monitoring to buying, selling, and everything in between. Caarify - GaadiGuru is your
                   one-stop solution for all things automotive.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -247,7 +264,7 @@ export default function LandingPage() {
                   src="/image.png?height=720&width=1280"
                   width={1280}
                   height={720}
-                  alt="Carrify car dashboard interface"
+                  alt="Caarify - GaadiGuru car dashboard interface"
                   className="w-full h-auto"
                   priority
                 />
@@ -272,11 +289,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Why Choose Carrify
+                Why Choose Caarify - GaadiGuru
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Everything Your Car Needs</h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                From routine maintenance to emergency assistance, Carrify provides comprehensive automotive solutions in
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black dark:text-white">Everything Your Car Needs</h2>
+              <p className="max-w-[800px] md:text-lg text-black dark:text-white">
+                From routine maintenance to emergency assistance, Caarify - GaadiGuru provides comprehensive automotive solutions in
                 one convenient app.
               </p>
             </motion.div>
@@ -396,11 +413,11 @@ export default function LandingPage() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-black dark:text-white">
                 Ready to Transform Your Car Experience?
               </h2>
-              <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Join thousands of car owners who trust Carrify for all their automotive needs. Download the app and
+              <p className="mx-auto max-w-[700px] md:text-xl text-black dark:text-white">
+                Join thousands of car owners who trust Caarify - GaadiGuru for all their automotive needs. Download the app and
                 discover the future of car ownership.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -416,7 +433,7 @@ export default function LandingPage() {
                   Learn More
                 </Button>
               </div>
-              <p className="text-sm text-primary-foreground/80 mt-4">
+              <p className="text-sm mt-4 text-black dark:text-white">
                 No credit card required. 14-day free trial. Cancel anytime.
               </p>
             </motion.div>
@@ -431,7 +448,7 @@ export default function LandingPage() {
                 <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
                   S
                 </div>
-                <span>Carrify</span>
+                <span>Caarify - GaadiGuru</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Your complete automotive companion. From maintenance to marketplace, everything your car needs in one
@@ -571,7 +588,7 @@ export default function LandingPage() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Carrify. All rights reserved.
+              &copy; {new Date().getFullYear()} Caarify - GaadiGuru. All rights reserved.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
@@ -587,6 +604,7 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+      </div>
     </div>
   )
 }
