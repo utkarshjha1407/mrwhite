@@ -335,7 +335,7 @@ export default function LandingPage() {
                   {
                     question: "How does car health monitoring work?",
                     answer:
-                      "We connect to your car's diagnostic system to monitor engine performance, battery health, tire pressure, and other vital systems. You'll get real-time alerts when something needs attention, helping you catch issues before they become expensive problems.",
+                      "We connect to your cars diagnostic system to monitor engine performance, battery health, tire pressure, and other vital systems. You'll get real-time alerts when something needs attention, helping you catch issues before they become expensive problems.",
                   },
                   {
                     question: "Are your mechanics trustworthy?",
