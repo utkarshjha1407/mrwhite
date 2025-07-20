@@ -19,12 +19,20 @@ import {
   Users,
   BarChart,
   Layers,
+  TrendingUp,
+  Heart,
+  Share,
+  Settings,
+  Fuel,
+  Phone,
+  MessageCircle,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useTheme } from "next-themes"
 
 export default function MarketplacePage() {

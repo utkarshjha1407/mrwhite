@@ -12,13 +12,26 @@ import {
   Sun,
   ArrowRight,
   Star,
+  Zap,
+  Shield,
   Users,
   BarChart,
   Layers,
+  TrendingUp,
+  AlertTriangle,
+  CheckCircle,
+  Clock,
+  Car,
+  Battery,
+  Gauge,
+  Wrench,
+  Calendar,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
+import { Progress } from "@/components/ui/progress"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useTheme } from "next-themes"
 
 export default function HomePage() {
