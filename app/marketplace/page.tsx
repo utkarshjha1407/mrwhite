@@ -103,7 +103,7 @@ export default function MarketplacePage() {
       price: "₹29,87,889",
       originalPrice: "₹30,50,889",
       mileage: "8,000 km",
-      image: "/images/mercedes c class.jpg",
+      image: "/images/mercedes.jpg",
       location: "Austin, TX",
       fuelType: "Petrol",
       transmission: "Automatic",
