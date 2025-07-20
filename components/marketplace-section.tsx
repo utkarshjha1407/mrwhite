@@ -124,7 +124,7 @@ export function MarketplaceSection() {
                         {car.rating} ({car.reviews})
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-4">{car.location}</p>
+                    {/* <p className="text-sm text-muted-foreground mb-4">{car.location}</p> */}
                     <Button className="w-full rounded-full">View Details</Button>
                   </CardContent>
                 </Card>
