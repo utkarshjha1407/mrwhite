@@ -1,34 +1,31 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import {
+  Check,
+  Menu,
+  X,
+  Moon,
+  Sun,
+  ArrowRight,
   Search,
+  Plus,
   Filter,
   MapPin,
-  Fuel,
-  Settings,
-  Heart,
-  Share,
-  Phone,
-  MessageCircle,
-  Car,
-  DollarSign,
+  Calendar,
   Users,
-  TrendingUp,
-  Moon,
-  Menu,
-  ChevronRight,
-  Star,
+  BarChart,
+  Layers,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { useTheme } from "next-themes"
 
 export default function MarketplacePage() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -150,13 +147,13 @@ export default function MarketplacePage() {
     {
       title: "Cars Listed",
       value: "50,000+",
-      icon: <Car className="size-6" />,
+      icon: <Layers className="size-6" />,
       change: "+12% this month",
     },
     {
       title: "Cars Sold",
       value: "₹207.5Cr+",
-      icon: <DollarSign className="size-6" />,
+      icon: <BarChart className="size-6" />,
       change: "+8% this month",
     },
     {
@@ -248,7 +245,7 @@ export default function MarketplacePage() {
               Browse Cars
             </Button>
             <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base bg-transparent">
-              <Car className="mr-2 size-4" />
+              <Plus className="mr-2 size-4" />
               Sell Your Car
             </Button>
           </div>

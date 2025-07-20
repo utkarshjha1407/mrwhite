@@ -1,29 +1,27 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import {
-  Star,
-  ShoppingCart,
-  Wrench,
-  Zap,
-  Droplets,
-  Shield,
-  Car,
-  Settings,
-  Filter,
-  Search,
-  Moon,
+  Check,
   Menu,
-  ChevronRight,
+  X,
+  Moon,
+  Sun,
+  ArrowRight,
+  Star,
+  Users,
+  BarChart,
+  Layers,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useTheme } from "next-themes"
 
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -251,7 +249,7 @@ export default function ProductsPage() {
         {/* Search and Filter */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground size-4" />
+            {/* <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground size-4" /> */}
             <Input
               placeholder="Search products and services..."
               value={searchTerm}
@@ -260,7 +258,7 @@ export default function ProductsPage() {
             />
           </div>
           <Button variant="outline" className="flex items-center gap-2 bg-transparent">
-            <Filter className="size-4" />
+            {/* <Filter className="size-4" /> */}
             Filter
           </Button>
         </div>
@@ -316,7 +314,7 @@ export default function ProductsPage() {
                       <div className="flex items-center justify-between">
                         <span className="text-lg font-bold">{product.price}</span>
                         <Button size="sm" className="rounded-full">
-                          <ShoppingCart className="size-4 mr-1" />
+                          {/* <ShoppingCart className="size-4 mr-1" /> */}
                           Add to Cart
                         </Button>
                       </div>
@@ -339,7 +337,7 @@ export default function ProductsPage() {
                   <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
                     <CardContent className="p-6">
                       <div className="size-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary mb-4">
-                        <Droplets className="size-6" />
+                        {/* <Droplets className="size-6" /> */}
                       </div>
                       <h3 className="text-xl font-bold mb-2">{service.name}</h3>
                       <p className="text-muted-foreground mb-4">{service.description}</p>

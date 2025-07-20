@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Wrench, Zap, Droplets, Shield, Car, Settings, Star } from "lucide-react"
+import { Star } from "lucide-react"
 import Image from "next/image"
 
 export function CarServicesSection() {

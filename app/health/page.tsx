@@ -1,28 +1,28 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import {
-  Battery,
-  Gauge,
-  AlertTriangle,
-  CheckCircle,
-  Calendar,
-  Car,
-  Wrench,
-  Moon,
+  Check,
   Menu,
-  ChevronRight,
+  X,
+  Moon,
+  Sun,
+  ArrowRight,
+  Star,
+  Users,
+  BarChart,
+  Layers,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useTheme } from "next-themes"
 
-export default function HealthPage() {
-  const [selectedCar, setSelectedCar] = useState("Toyota Camry 2020")
+export default function HomePage() {
+  const [selectedCar] = useState("BMW X5")
 
   const healthMetrics = [
     {
